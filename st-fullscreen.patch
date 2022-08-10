@@ -1,0 +1,21 @@
+4,7c4,6
+< @@ -201,6 +201,8 @@
+<  	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
+<  	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
+<  	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+---
+> @@ -206,6 +206,8 @@
+> 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
+> 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+12a12
+> 
+20a21,22
+>  void kscrolldown(const Arg *);
+>  void kscrollup(const Arg *);
+22,23d23
+<  void printsel(const Arg *);
+<  void sendbreak(const Arg *);
+27c27
+< @@ -94,6 +94,7 @@
+---
+> @@ -96,6 +96,7 @@

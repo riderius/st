@@ -1,7 +1,7 @@
 pkgbase = st
 	pkgdesc = A simple virtual terminal emulator for X.
 	pkgver = 0.8.5
-	pkgrel = 2
+	pkgrel = 3
 	url = https://st.suckless.org
 	arch = i686
 	arch = x86_64
@@ -17,6 +17,7 @@ pkgbase = st
 	source = https://st.suckless.org/patches/w3m/st-w3m-0.8.3.diff
 	source = https://st.suckless.org/patches/fullscreen/st-fullscreen-0.8.5.diff
 	source = st-fullscreen.patch
+	source = https://st.suckless.org/patches/visualbell/st-visualbell-0.8.4.diff
 	sha256sums = ea6832203ed02ff74182bcb8adaa9ec454c8f989e79232cb859665e2f544ab37
 	sha256sums = f9deea445a5c6203a0e8e699f3c3b55e27275f17fb408562c4dd5d649edeea23
 	sha256sums = 0ebcbba881832adf9c98ce9fe7667c851d3cc3345077cb8ebe32702698665be2
@@ -25,5 +26,6 @@ pkgbase = st
 	sha256sums = 8bd6fbd4c0a096c67a4a5f68585a66c93f0085b6ddea853a321b9be7316f91b3
 	sha256sums = f889f4d92a627dc22a7f6f5b4c31e7aba0f2e5715cb9a10ef3bdd3b22d695ada
 	sha256sums = 7d5597b9bd5d193e9a19d41fb30d8c6602a6bc9804b8f5167533ac2b079c12c4
+	sha256sums = d56c6438241759ecc30a987d853b524a2ba713db4ed4dfb2c000515f35047d90
 
 pkgname = st

@@ -5,7 +5,7 @@
 
 pkgname=st
 pkgver=0.8.5
-pkgrel=2
+pkgrel=3
 pkgdesc='A simple virtual terminal emulator for X.'
 arch=('i686' 'x86_64' 'armv7h' 'aarch64')
 license=('MIT')
@@ -18,7 +18,8 @@ source=(https://dl.suckless.org/$pkgname/$pkgname-$pkgver.tar.gz
         https://st.suckless.org/patches/scrollback/st-scrollback-mouse-20220127-2c5edf2.diff
         https://st.suckless.org/patches/w3m/st-w3m-0.8.3.diff
         https://st.suckless.org/patches/fullscreen/st-fullscreen-0.8.5.diff
-        st-fullscreen.patch)
+        st-fullscreen.patch
+        https://st.suckless.org/patches/visualbell/st-visualbell-0.8.4.diff)
 sha256sums=('ea6832203ed02ff74182bcb8adaa9ec454c8f989e79232cb859665e2f544ab37'
             'f9deea445a5c6203a0e8e699f3c3b55e27275f17fb408562c4dd5d649edeea23'
             '0ebcbba881832adf9c98ce9fe7667c851d3cc3345077cb8ebe32702698665be2'
@@ -26,7 +27,8 @@ sha256sums=('ea6832203ed02ff74182bcb8adaa9ec454c8f989e79232cb859665e2f544ab37'
             '46ac9bcdbfeb0011533207cb0ab31657a3eb9196da1d0db346e6a9d1fc4b4f76'
             '8bd6fbd4c0a096c67a4a5f68585a66c93f0085b6ddea853a321b9be7316f91b3'
             'f889f4d92a627dc22a7f6f5b4c31e7aba0f2e5715cb9a10ef3bdd3b22d695ada'
-            '7d5597b9bd5d193e9a19d41fb30d8c6602a6bc9804b8f5167533ac2b079c12c4')
+            '7d5597b9bd5d193e9a19d41fb30d8c6602a6bc9804b8f5167533ac2b079c12c4'
+            'd56c6438241759ecc30a987d853b524a2ba713db4ed4dfb2c000515f35047d90')
 _sourcedir=$pkgname-$pkgver
 _makeopts="--directory=$_sourcedir"
 
@@ -45,6 +47,8 @@ prepare() {
   patch st-fullscreen-0.8.5.diff < st-fullscreen.patch
   echo ">> apply fullscreen"
   patch --directory="$_sourcedir" < st-fullscreen-0.8.5.diff
+  echo ">> apply visualbell"
+  patch --directory="$_sourcedir" < st-visualbell-0.8.4.diff
 
   # This package provides a mechanism to provide a custom config.h. Multiple
   # configuration states are determined by the presence of two files in

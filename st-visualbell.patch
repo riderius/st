@@ -1,0 +1,4 @@
+17c17
+<  static int oldbutton = 3; /* button event on startup: 3 = release */
+---
+>  static uint buttons; /* bit field of pressed buttons */

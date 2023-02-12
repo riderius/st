@@ -1,7 +1,7 @@
 pkgbase = st
 	pkgdesc = A simple virtual terminal emulator for X.
 	pkgver = 0.9
-	pkgrel = 1
+	pkgrel = 2
 	url = https://st.suckless.org
 	arch = i686
 	arch = x86_64
@@ -22,7 +22,7 @@ pkgbase = st
 	source = https://st.suckless.org/patches/desktopentry/st-desktopentry-0.8.5.diff
 	sha256sums = f36359799734eae785becb374063f0be833cf22f88b4f169cd251b99324e08e7
 	sha256sums = f9deea445a5c6203a0e8e699f3c3b55e27275f17fb408562c4dd5d649edeea23
-	sha256sums = 0ebcbba881832adf9c98ce9fe7667c851d3cc3345077cb8ebe32702698665be2
+	sha256sums = 95be3197f7de77a0fe2e4f527202e17e910ee24e1ed6bc39beb320a1304bb7e1
 	sha256sums = dc7f5223b26fc813d91d4ae35bdaa54d63024cae9f18afd9b3594ba3399dfa55
 	sha256sums = 46ac9bcdbfeb0011533207cb0ab31657a3eb9196da1d0db346e6a9d1fc4b4f76
 	sha256sums = 8bd6fbd4c0a096c67a4a5f68585a66c93f0085b6ddea853a321b9be7316f91b3
